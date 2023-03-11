@@ -159,8 +159,8 @@ class nodeGraph {
   }
   getNodeByID(nodeID) {
     const node = this.nodes.find((node) => node.id === nodeID);
-    if (!node) {
-      throw new Error(`Node with ID ${nodeID} not found`);
+    if (node.length==0) {
+      return false;
     }
     return node;
   }
