@@ -13,7 +13,7 @@ You can start using Nodular module by cloning file `nodular.js` and using requir
 Here's a simple example that demonstrates how to create and run nodes using Nodular:
 ```
 
-`const {nodeGraph} = require('nodular');
+const {nodeGraph} = require('./path/to/nodular.js');
 
 // create a new node graph
 const graph = new nodeGraph();
@@ -34,7 +34,7 @@ graph.evaluateNodes();
 
 // check output data
 console.log(node1.ports.output[0].data); // should output 3
-console.log(node2.ports.output[0].data); // should output 2` 
+console.log(node2.ports.output[0].data); // should output 2 
 ```
 ## Usage
 
